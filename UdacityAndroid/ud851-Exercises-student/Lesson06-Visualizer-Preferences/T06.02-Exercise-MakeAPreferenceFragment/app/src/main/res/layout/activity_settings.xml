@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="android.example.com.visualizerpreferences.SettingsFragment"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</fragment>
+
+<!--
+  // TODO (7) Set the root layout of activity_settings to our newly created SettingsFragment
+    // and remove the padding.
+    // [HINT] Use a <fragment> element in xml
+    name links the preferences to the activity
+-->
