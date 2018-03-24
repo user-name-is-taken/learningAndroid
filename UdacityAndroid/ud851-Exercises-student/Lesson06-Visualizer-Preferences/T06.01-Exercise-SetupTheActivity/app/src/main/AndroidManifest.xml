@@ -12,7 +12,6 @@
     https://developer.android.com/training/implementing-navigation/ancestral.html
     Make sure to use the attribute android:launchMode singleTop
     -->
-
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +19,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".VisualizerActivity"
+        <activity
+            android:name=".VisualizerActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,12 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity"
-            android:parentActivityName=".VisualizerActivity"
-            android:label="@string/action_settings">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/action_settings"
+            android:parentActivityName=".VisualizerActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".VisualizerActivity"/>
+                android:value=".VisualizerActivity" />
         </activity>
     </application>
 
